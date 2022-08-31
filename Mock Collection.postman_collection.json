@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "5308ed63-2ae1-448e-88be-9eed9a074cbb",
+		"name": "Mock Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23093068"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Publish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ClientID",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "ClientSecret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://postman-mock.com/get?var={{my_variable}}",
+					"protocol": "https",
+					"host": [
+						"postman-mock",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "var",
+							"value": "{{my_variable}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
